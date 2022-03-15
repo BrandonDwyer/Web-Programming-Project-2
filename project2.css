@@ -1,0 +1,143 @@
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px; 
+}
+
+body {
+background: url(blankb.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset strong,
+ul strong,
+fieldset label.left,
+fieldset .column {
+	float: left;
+	width: 11em;
+}
+
+fieldset{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+
+
+input[type="password"], input[type="text"]{
+    background: none;
+    outline: none;
+    width: 210px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0px 15px;
+    margin: 15px 0px;
+    border: solid 2px #002cff;
+    transition: 1s;
+}
+input[type="password"]:focus, input[type="text"]:focus{
+    width: 320px;
+    border-color: chartreuse;
+    transition: 1s;
+}
+
+input[type="submit"]{
+    text-align: center;
+	background-color: #FAA;
+	font-size: 100%;
+	font-weight: bold;
+    background: none;
+    outline: none;
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
+    margin: 15px 0px;
+    border: solid 2px #002cff;
+    color: #fff;
+    font-size: 18px;
+    transition: 1s;
+}
+input[type="submit"]:hover{
+    background: #002cff;
+    transition: 1s;
+}
+
+
+
+
+::placeholder{
+    color: #e5e5e5;
+}
+
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: aliceblue;
+    text-align: center;
+    width: 20%;
+}
+
+a:visited{
+    
+	font-size: 22 pt;
+	box-sizing: border-box;
+    border-radius: 12px;
+}
+
+a:hover{
+	background-color: #002cff;
+    color: rgb(24, 161, 202);
+}
+
+p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h2{
+    
+     text-align: center;
+     box-shadow: 0 0 10px rgb(109, 51, 51);
+     border: none;
+     border-radius: 12px;
+     width: auto;
+     font-size: 18pt;
+     font-weight: bold;
+     margin-left: auto;
+     margin-right: auto;
+ }
