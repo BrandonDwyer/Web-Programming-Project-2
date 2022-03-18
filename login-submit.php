@@ -26,7 +26,8 @@
         }
         else{
             if($_POST['Username'] == $users[$i][0] && $_POST['Password'] == $users[$i][1]){
-                $_SESSION['Name'] = $users[$i][2];
+                $_SESSION['USER'] = $users[$i][2];
+                $_SESSION["Points"] = $users[$i][3];
                 $loginFailed = FALSE;
             }
         }
@@ -37,6 +38,7 @@
         header("Location: index.php");
     }
     else{
+
         header("Location: jeopardyHomepage.php");
     }
         ?>
