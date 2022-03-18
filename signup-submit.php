@@ -9,42 +9,19 @@
     </head>
     <body>
 <?php 
-             session_start();
-            $user_file = fopen('users.txt','a');
+            // session_start();
+            $score = 0;
             $dataPush = array(
-                $_POST['Username'],
-                $_POST['Password'],
-                $_POST['Name']
+                'UserName' => $_POST['Username'],
+                'Password' =>  $_POST['Password'],
+                'Name' =>  $_POST['Name'],
+                'Score' => $score
             );
-            $csv_file = file_get_contents('users.txt');
-            $user_file = fopen("php://temp", 'r+');
-            fputs($user_file,$csv_file);
-            rewind($user_file);
-            $users = [];
-            while(($data = fgetcsv($user_file)) !== FALSE){
-                $users[] = $data;
-            }
-            $_SESSION['signupFail'] = FALSE;
-            for($a = 0; $a < count($users); $a++){
-                if(!isset($users[$i][0])){ //Error handling in case of bad pushes to the csv.
-                    continue;
-                }
-                elseif($_POST['Username'] == $users[$a][0]){
-                        $_SESSION['signupFail'] = TRUE;
-                        header("Location: signup.php");
-                }
-                else{
-                    continue;
-                }
-
             
-            }
-            fclose($user_file);
-            $$user_file = fopen("users.txt", 'w');
-            print_r($dataPush);
-            fputcsv($user_file, $dataPush);
-            header("Location: index.php?");
-            fclose($user_file);
+            $user_details = $dataPush;
+            $new_data = implode(",", $user_details);
+            file_put_contents("UsersInfo.txt", PHP_EOL.$new_data, FILE_APPEND);
+            header('Location: /index.php');
             ?>
 
 </body>

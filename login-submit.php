@@ -9,34 +9,36 @@
     </head>
     <body>
         <?php
+            function console_log( $data ){
+                echo '<script>';
+                echo 'console.log('. json_encode( $data ) .')';
+                echo '</script>';
+              }
+    $userData = array(
+         $_POST['Username'],
+         $_POST['Password'],
+    );
+    $loginFailed  = TRUE;
+    $currentUser;
     session_start();
-    $csv_file = file_get_contents('users.txt');
-    $file = fopen("php://temp", 'r+');
-    fputs($file,$csv_file);
-    rewind($file);
-    $users = [];
-    while(($data = fgetcsv($file)) !== FALSE){
-        $users[] = $data;
-    }
-    $loginFailed = TRUE;
-
-    for($i = 0; $i < count($users); $i++){
-        if(!isset($users[$i][0])){ //Error handling in case of bad pushes to the csv file.
-            continue;
-        }
-        else{
-            if($_POST['Username'] == $users[$i][0] && $_POST['Password'] == $users[$i][1]){
-                $_SESSION['Name'] = $users[$i][2];
-                $loginFailed = FALSE;
-            }
+    $txt_file  = file_get_contents('UsersInfo.txt');
+    $rows = explode("\n", $txt_file);
+    foreach($rows as $row => $data)
+    {
+        //get row data
+        $row_data = explode(',', $data);
+        if($row_data[0] == $userData[0] && $row_data[1] == $userData[1]){
+            $loginFailed = FALSE;
+            $currentUser = $row_data;
         }
     }
-    print_r($users);
     if($loginFailed == TRUE){
         $_SESSION['loginFail'] = TRUE;
+        $_SESSION['info'] = $users;
         header("Location: index.php");
     }
     else{
+        $_SESSION["USER"] = $currentUser;
         header("Location: main.php");
     }
         ?>
