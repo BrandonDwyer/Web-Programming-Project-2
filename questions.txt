@@ -1,32 +1,35 @@
 //layout
-//question number, question, ans1,ans2,ans3,ans4,The positon of the currect Answer,Points
-1,This American swimmer holds the most medals of any Olympian,Who is Michael Phelps?,Who is Natalie Coughlin?,Who is Dara Torres?,Who is Shaun White?,2,200
-2,He is the only one of these players to not have been a member of the original dream team which was formed for the 1992 Olympics in Barcelona,Who is Christian Laettner?,Who is Reggie Miller?,Who is John Stockton?,Who is Chris Mullin?,3
-3,This was the first team to win the Stanley Cup after the NHL assumed control of the cup following the 1926 season,Who are the Ottawa Senators?,Who are the Boston Bruins?,Who are the Montreal Canadiens?,Who are the Toronto Maple Leafs?,2
-4,This quarterback's impressive legacy might be forever shadowed by "Deflategate.",Who is Tom Brady?,Who is Joe Montana?,Who is Eli Manning?,Who is Peyton Manning?,2
-5,The Orlando Magic selected this college standout with the first pick in the 1993 NBA draft.,Who is Chris Webber?,Who is Anfernee Hardaway?,Who is Shawn Bradley?,Who is Shaquille O'Neil?,2
-6,According to the Census Bureau what are the five most common surnames in the United States,What is Smith Johnson Williams Jones and Brown,What is Smith Johnson Kelvin Thomas and Washington,What is Smith Johnson Williams Jones and Brown,What is Smith John Williams Jones and Martin,2
-7,Joseph Goebbels was minister of propaganda for this political party.,What is the Peace and Freedom Party?,What is the Sturm und Drang Party?,What is the Nazi Party?,What is the Fallist Party?,3
-8, This group awards a highly prestigious Peace Prize with the same name.,What is the LDS church?What is the United Nations?,What is the Nobel Foundation?,What is the Gates Foundation?,3
-9,More than 30000 Americans died in this "forgotten war.",What is WWII?,What is the Korean Conflict?,What is the Revolutionary War?,What is the War of the Roses?,3
-10,Who in 1963 murdered Lee Harvey Oswald the assassin (according to official accounts) of US President John F Kennedy?,What is Jack Ruby?,What is Thomas Nast,What is Jesse James,What is Brigham Young,2
-11,The first Earth Day was celebrated in this year...,1950,1960,1970,1980,4
-12,These substances control the rates of chemical reactions...,Reactants,Catalysts,Isotopes,Cathodes,3
-13,These are the only two planets in our solar system without moons...,Mercury & Venus,Venus & Mars,Uranus & Neptune,Neptune & Pluto,2
-14,This was the first genetically engineered organism.,Corn,Tobacco,Sheep,Rat,3
-15,This animal has the highest blood pressure...,Giraffe,Blue Whale,Elephant,Flea,2
-16,This street the financial center of America probably got its name from a wooden barrier.,What is Colfax Avenue?,What is Bond Street?,What is Pennsylvania Avenue?,What is Wall Street?,5
-17,Visit this country's Provence region to see the fields of lavender.,What is Andorra?,What is France?,What is Greece?,What is New Zealand?,3
-18,If you want to visit this city you're likely to land at O'Hare or Midway.,What is Boston?,What is Chicago?,What is New York City?,What is Miami?,3
-19,In terms of square miles I'm the smallest state in the U.S.,What is Delaware?,What is Maine?,What is New Hampshire?,What is Rhode Island?,5
-20,You'll find the Tomb of the Unknown Soldier and JFK's "eternal flame" here.,What is Arlington National Cemetery?,What is Beechwood Cemetery?,What is West Point?,What is the Vietnam War memorial?,2
-21,85% of the cars sold in the U.S. in 1968 had this type of large engine,What is a V8?,What is a V4?,What is a V6?,What is a V7?,2
-22,With the GT version named one of Car & Driver's 10 Best for 2012 this is the only Ford to receive that honor 7 times,What is a Mustang?,What is Camry?,What is Acura?,What is Lamborghini?,2
-23,In 1987 this Italian company's Countach sold for about $125000,What is Lamborghini?,What is Audi?,What is BMW?,What is Cadillac?,2
-24,Powered by both a gasoline engine and an electric motor this company's Insight was the first hybrid car sold in the U.S.,What is Honda?,What is Toyota?,What is Audi?,What is Ford?,2
-25,We salute you if you know that this was the name of Bo & Luke's car on "The Dukes of Hazzard",What is General Lee?,What is Daytona Spider?,What is Thunderbirds?,What is Testarossa?,2
-26,A protein called draculin in the saliva of these animals prevents blood from clotting as they feed,Desmodus draculae,vampire bats,Myotragus,Vampire squid,3
-27,The sea wasp a box type of this sea creature can have tentacles 10 feet long,jellyfish,Pelagia noctiluca,Cotylorhiza tuberculata,Chrysaora hysoscella,2
-28,Which mammal is known to have the most powerful bite in the world?,Dolphin,Lion,Elephant,Hippopotamus,5
-29,Which animal is known to spend 90% of its day sleeping?,Koalas,Tiger,Wombat,Kangaroo,2
-30,What animal is said to have 9 lives?,Dog,Cat,Hamsters,Bunny,3
+//question number, question, ans1,ans2,ans3,ans4,The positon of the currect Answer. 
+1,This American swimmer holds the most medals of any Olympian,Who is Michael Phelps?,Who is Natalie Coughlin?,Who is Dara Torres?,Who is Shaun White?,2,$200
+2,He is the only one of these players to not have been a member of the original dream team which was formed for the 1992 Olympics in Barcelona,Who is Christian Laettner?,Who is Reggie Miller?,Who is John Stockton?,Who is Chris Mullin?,3,$400
+3,This was the first team to win the Stanley Cup after the NHL assumed control of the cup following the 1926 season,Who are the Ottawa Senators?,Who are the Boston Bruins?,Who are the Montreal Canadiens?,Who are the Toronto Maple Leafs?,2,$600
+4,This quarterback's impressive legacy might be forever shadowed by "Deflategate.",Who is Tom Brady?,Who is Joe Montana?,Who is Eli Manning?,Who is Peyton Manning?,2,$800
+5,The Orlando Magic selected this college standout with the first pick in the 1993 NBA draft.,Who is Chris Webber?,Who is Anfernee Hardaway?,Who is Shawn Bradley?,Who is Shaquille O'Neil?,2,$1000
+6,According to the Census Bureau what are the five most common surnames in the United States,What is Smith Johnson Williams Jones and Brown,What is Smith Johnson Kelvin Thomas and Washington,What is Smith Johnson Williams Jones and Brown,What is Smith John Williams Jones and Martin,2,$200
+7,Joseph Goebbels was minister of propaganda for this political party.,What is the Peace and Freedom Party?,What is the Sturm und Drang Party?,What is the Nazi Party?,What is the Fallist Party?,3,$400
+8, This group awards a highly prestigious Peace Prize with the same name.,What is the LDS church?What is the United Nations?,What is the Nobel Foundation?,What is the Gates Foundation?,3,$600
+9,More than 30000 Americans died in this "forgotten war.",What is WWII?,What is the Korean Conflict?,What is the Revolutionary War?,What is the War of the Roses?,3,$800
+10,Who in 1963 murdered Lee Harvey Oswald the assassin (according to official accounts) of US President John F Kennedy?,What is Jack Ruby?,What is Thomas Nast,What is Jesse James,What is Brigham Young,2,$1000
+11,The first Earth Day was celebrated in this year...,1950,1960,1970,1980,4,$200
+12,These substances control the rates of chemical reactions...,Reactants,Catalysts,Isotopes,Cathodes,3,$400
+13,These are the only two planets in our solar system without moons...,Mercury & Venus,Venus & Mars,Uranus & Neptune,Neptune & Pluto,2,$600
+14,This was the first genetically engineered organism.,Corn,Tobacco,Sheep,Rat,3,$800
+15,This animal has the highest blood pressure...,Giraffe,Blue Whale,Elephant,Flea,2,$1000
+16,This street the financial center of America probably got its name from a wooden barrier.,What is Colfax Avenue?,What is Bond Street?,What is Pennsylvania Avenue?,What is Wall Street?,5,$200
+17,Visit this country's Provence region to see the fields of lavender.,What is Andorra?,What is France?,What is Greece?,What is New Zealand?,3,$400
+18,If you want to visit this city you're likely to land at O'Hare or Midway.,What is Boston?,What is Chicago?,What is New York City?,What is Miami?,3,$600
+19,In terms of square miles I'm the smallest state in the U.S.,What is Delaware?,What is Maine?,What is New Hampshire?,What is Rhode Island?,5,$800
+20,You'll find the Tomb of the Unknown Soldier and JFK's "eternal flame" here.,What is Arlington National Cemetery?,What is Beechwood Cemetery?,What is West Point?,What is the Vietnam War memorial?,2,$1000
+21,85% of the cars sold in the U.S. in 1968 had this type of large engine,What is a V8?,What is a V4?,What is a V6?,What is a V7?,2,$200
+22,With the GT version named one of Car & Driver's 10 Best for 2012 this is the only Ford to receive that honor 7 times,What is a Mustang?,What is Camry?,What is Acura?,What is Lamborghini?,2,$400
+23,In 1987 this Italian company's Countach sold for about $125000,What is Lamborghini?,What is Audi?,What is BMW?,What is Cadillac?,2,$600
+24,Powered by both a gasoline engine and an electric motor this company's Insight was the first hybrid car sold in the U.S.,What is Honda?,What is Toyota?,What is Audi?,What is Ford?,2,$800
+25,We salute you if you know that this was the name of Bo & Luke's car on "The Dukes of Hazzard",What is General Lee?,What is Daytona Spider?,What is Thunderbirds?,What is Testarossa?,2,$1000
+26,A protein called draculin in the saliva of these animals prevents blood from clotting as they feed,Desmodus draculae,vampire bats,Myotragus,Vampire squid,3,$200
+27,The sea wasp a box type of this sea creature can have tentacles 10 feet long,jellyfish,Pelagia noctiluca,Cotylorhiza tuberculata,Chrysaora hysoscella,2,$400
+28,Which mammal is known to have the most powerful bite in the world?,Dolphin,Lion,Elephant,Hippopotamus,5,$600
+29,Which animal is known to spend 90% of its day sleeping?,Koalas,Tiger,Wombat,Kangaroo,2,$800
+30,What animal is said to have 9 lives?,Dog,Cat,Hamsters,Bunny,3,$1000
+
+
+
