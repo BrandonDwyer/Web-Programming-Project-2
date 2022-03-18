@@ -68,5 +68,57 @@ body {
   cursor: pointer;
 }
 
+.button:hover{
+  color: red;
+}
+
+
+
+p{
+  text-align: center;
+  color: rgb(224, 181, 181);
+  font-family: 'Comic Sans MS' ;
+  font-size: 3em;
+  
+
+}
+
+#d1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+  color:rgb(170, 172, 172);
+  position: relative;
+  width:400px;
+  height:300px;
+  left:200px;
+  right: 100px;
+  
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  margin: 1em 0px;
+  text-align: left;
+}
+
+
+ h2{
+   color:#788aee;
+   font-size: 1em;
+   text-align: center;
+  
+ }
+
+#jeo{
+  font-family: 'Lucida Grande';
+  font-weight: 700;
+  font-size: 10em;
+  text-align: center;
+  font-stretch: condensed;
+  text-shadow: rgb(248, 248, 248) 0.5em 0.5em 0.5em;
+  color: rgb(241, 173, 25);
+  font-style: oblique 20deg;
+}
 
 
