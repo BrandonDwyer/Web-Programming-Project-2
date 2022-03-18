@@ -23,9 +23,28 @@
 
 <!-- Creating $200 Value Row For Game Board -->
 <tr>
-<td> <a href=QuestionScreen.php?1> $200</a> </td> 
+<td> <a href="QuestionScreen.php?2"> 200</a> </td> 
 </tr>
 
+<!-- Creating $400 Value Row For Game Board -->
+<tr>
+<td> <a href="QuestionScreen.php?2"> 400</a> </td> 
+</tr>
+
+<!-- Creating $600 Value Row For Game Board -->
+<tr>
+<td> <a href="QuestionScreen.php?2"> 600</a> </td> 
+</tr>
+
+<!-- Creating $800 Value Row For Game Board -->
+<tr>
+<td> <a href="QuestionScreen.php?2"> 800</a> </td> 
+</tr>
+
+<!-- Creating $1000 Value Row For Game Board -->
+<tr>
+<td> <a href="QuestionScreen.php?2"> 1000</a> </td> 
+</tr>
 </table>
 <!-- End of Game Board Table-->
 
