@@ -4,13 +4,13 @@
 <html>
     <head>
         <title>Jeopardy! - Login</title>
-        <link type = "text/css" rel = "stylesheet" href = "styles.css"/>
+        <link type = "text/css" rel = "stylesheet" href = "style.css"/>
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     </head>
     <body>
         <?php
     session_start();
-    $csv_file = file_get_contents('users.txt');
+    $csv_file = file_get_contents('usersInfo.txt');
     $file = fopen("php://temp", 'r+');
     fputs($file,$csv_file);
     rewind($file);
@@ -37,7 +37,7 @@
         header("Location: index.php");
     }
     else{
-        header("Location: main.php");
+        header("Location: jeopardyHomepage.php");
     }
         ?>
     </body>
