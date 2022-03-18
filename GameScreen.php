@@ -24,16 +24,6 @@
 <!-- Creating $200 Value Row For Game Board -->
 <tr>
 <td> <a href=QuestionScreen.php?1> $200</a> </td> 
-
-<td> <a href="/jeopardyQuestion/historyQuestion1.php"> $200</a> </td> 
-
-<td> <a href="/jeopardyQuestion/scienceQuestions1.php"> $200</a> </td> 
-
-<td> <a href="/jeopardyQuestion/geographyQuestion1.php"> $200</a> </td> 
-
-<td> <a href="/jeopardyQuestion/carsQuestion1.php"> $200</a> </td> 
-
-<td> <a href="/jeopardyQuestion/animalsQuestion1.php"> $200</a> </td>
 </tr>
 
 </table>
