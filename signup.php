@@ -25,12 +25,12 @@
             <fieldset>
                 <h1>Sign Up!</h1>
                 <label for = "username"><strong>Username:</strong></label>
-                <input type = "text" size = "16" name = "Username" placeholder="@Username"/></br>
+                <input type = "text" size = "16" name = "Username" placeholder="@Username" required></br>
                 <label for = "password"><strong>Password:</strong></label>
-                <input type = "password" size = "16" name = "Password" placeholder="Password"/></br>
+                <input type = "password" size = "16" name = "Password" placeholder="Password" required></br>
                 <label for = "name"><strong>Name:</strong></label>
-                <input type = "text" size = "16" name = "Name" placeholder="Name"/></br>
-                <input type = "submit" name ="Submit" value = "Sign Up!"/>
+                <input type = "text" size = "16" name = "Name" placeholder="Name"required></br>
+                <input type = "submit" name ="Submit" value = "Sign Up!">
                 <p>Already have an account? <a href="index.php">Log in</a></p>
             </fieldset>
             
