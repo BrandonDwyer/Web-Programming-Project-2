@@ -21,7 +21,7 @@
             $user_details = $dataPush;
             $new_data = implode(",", $user_details);
             file_put_contents("UsersInfo.txt", PHP_EOL.$new_data, FILE_APPEND);
-            header('Location: /index.php');
+            header('Location: index.php');
             ?>
 
 </body>
