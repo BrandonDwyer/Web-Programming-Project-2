@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" href="../jeopardy.css">
+<link rel="stylesheet" href="jeopardy.css">
 <title> Jeporady Question Page</title>
 </head>
 <body>
@@ -45,13 +45,13 @@
 
 
 <div class="submittion">
-<h1> <?php echo $data[1]; ?></h1>
 <div class = "Answers">
 <form method="post" >
-  <h2> <?php echo $data[2] ?> <input type="radio" name="ans" value="1"  /> </h2>
-  <h2> <?php echo $data[3] ?> <input type="radio" name="ans" value="2"  /> </h2>
-  <h2> <?php echo $data[4] ?><input type="radio" name="ans" value="3"  /> </h2>
-  <h2> <?php echo $data[5] ?> <input type="radio" name="ans" value="4"? /> </h2>
+  <h2> <?php echo $data[1] ?> <input type="radio" name="ans" value="1"  /></h2>
+  <h2> <?php echo $data[2] ?> <input type="radio" name="ans" value="2"  /> </h2>
+  <h2> <?php echo $data[3] ?> <input type="radio" name="ans" value="3"  /> </h2>
+  <h2> <?php echo $data[4] ?><input type="radio" name="ans" value="4"  /> </h2>
+  <h2> <?php echo $data[5] ?> <input type="radio" name="ans" value="5"? /> </h2>
   </div>
   <input type="submit" value="submit" class = "submittionButton"/>
 
