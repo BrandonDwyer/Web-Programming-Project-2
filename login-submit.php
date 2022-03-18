@@ -39,7 +39,7 @@
     }
     else{
         $_SESSION["USER"] = $currentUser;
-        header("Location: main.php");
+        header("Location: jeopardyHomepage.php");
     }
         ?>
     </body>
