@@ -20,7 +20,7 @@
                 //Notification to the user that their Username or Password is not correct. 
                 //The flag is checked and unset so future login attempts/signins do not show this message if the error is repeated.
                 if($_SESSION['loginFail'] == TRUE){
-                    echo "<p>Incorrect username or password, please try again.<p>";
+                    echo "<h2>Incorrect username or password, please try again.</h2>";
                     $_SESSION['loginFail'] = FALSE;
                 }
             }

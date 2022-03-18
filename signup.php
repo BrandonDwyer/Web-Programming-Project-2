@@ -25,21 +25,12 @@
             <fieldset>
                 <h1>Sign Up!</h1>
                 <label for = "username"><strong>Username:</strong></label>
-<<<<<<< HEAD
-                <input type = "text" size = "16" name = "Username" placeholder="@Username"/></br>
-                <label for = "password"><strong>Password:</strong></label>
-                <input type = "password" size = "16" name = "Password" placeholder="Password"/></br>
-                <label for = "name"><strong>Name:</strong></label>
-                <input type = "text" size = "16" name = "Name" placeholder="Name"/></br>
-                <input type = "submit" name ="Submit" value = "Sign Up!"/>
-=======
                 <input type = "text" size = "16" name = "Username" placeholder="@Username" required></br>
                 <label for = "password"><strong>Password:</strong></label>
                 <input type = "password" size = "16" name = "Password" placeholder="Password" required></br>
                 <label for = "name"><strong>Name:</strong></label>
                 <input type = "text" size = "16" name = "Name" placeholder="Name" required></br>
                 <input type = "submit" name ="Submit" value = "Sign Up!">
->>>>>>> 36f67e2fb9186f654fd3d4b3508685e37f476825
                 <p>Already have an account? <a href="index.php">Log in</a></p>
             </fieldset>
             

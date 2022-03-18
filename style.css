@@ -133,7 +133,6 @@ p{
 h2{
     
      text-align: center;
-     box-shadow: 0 0 10px rgb(109, 51, 51);
      border: none;
      border-radius: 12px;
      width: auto;
@@ -141,4 +140,5 @@ h2{
      font-weight: bold;
      margin-left: auto;
      margin-right: auto;
+     color:#fff;
  }
