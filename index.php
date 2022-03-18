@@ -3,9 +3,13 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
     <head>
+<<<<<<< HEAD
+        <title>Jeopardy! - Sign Up</title>
+=======
 
         <title>Jeopardy!</title>
 
+>>>>>>> 36f67e2fb9186f654fd3d4b3508685e37f476825
         <link type = "text/css" rel = "stylesheet" href = "style.css"/>
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     </head>
