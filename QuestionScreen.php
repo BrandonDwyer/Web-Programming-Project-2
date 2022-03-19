@@ -36,16 +36,16 @@
     if ($answer == $data[6]) {    
         $val = (int)$_SESSION['Points'] + (int)$data[7];
         $_SESSION['Points'] = $val;
-        header('Location: /GameScreen.php');
+        header('Location: GameScreen.php');
     }
     else {
         $val = (int)$_SESSION['Points'] - (int)$data[7];
         $_SESSION['Points'] = $val;
-        header('Location: /GameScreen.php');
+        header('Location: GameScreen.php');
     } 
     }
 ?>
-<h1> JEOPARDY !</h1>
+<div class="jeo"> JEOPARDY !</div>
 
 
 <div class="submittion">

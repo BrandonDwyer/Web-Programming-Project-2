@@ -13,7 +13,8 @@ table, th, td {
 h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 5px; 
+    letter-spacing: 4px; 
+    color:rgb(238, 50, 213);
 
 }
 
@@ -57,6 +58,9 @@ body {
   font-size: large;
 }
 
+.submittionButton:hover{
+  color: red;
+}
 .button {
   background-color: blueviolet;
   border: none;
@@ -102,15 +106,21 @@ pre {
   text-align: left;
 }
 
+h3{
+  color:#788aee;
+  font-size: 1em;
+  text-align: center;
+ 
+}
 
  h2{
-   color:#788aee;
-   font-size: 1em;
-   text-align: center;
-  
+   color:#f1f1f1;
+   font-size: 1.3em;
+   text-align: left;
  }
 
-#jeo{
+
+.jeo{
   font-family: 'Lucida Grande';
   font-weight: 700;
   font-size: 10em;
@@ -122,3 +132,35 @@ pre {
 }
 
 
+input[type="radio"] {
+  appearance: none;
+  background-color: rgb(219, 51, 51);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 0.9em;
+  height: 0.9em;
+  border: 0.15em solid white;
+  border-radius: 40%;
+  transform: translateY(-0.075em);
+  
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 40%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid yellow;
+  outline-offset: max(2px, 0.15em);
+}

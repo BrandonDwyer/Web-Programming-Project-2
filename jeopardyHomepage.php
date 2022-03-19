@@ -14,7 +14,7 @@ if(!isset($_SESSION['USER'])){
 </head>
 <body>
 
-<div id="jeo">JEOPARDY!</div>
+<div class="jeo">JEOPARDY!</div>
 
 <p> Welcome <?php echo $_SESSION["USER"]; ?>! </p>
 
@@ -26,7 +26,7 @@ $_SESSION["user3"] = " User3 - $900";
 ?>
 
 <div id="d1">
-<h2> LeaderBoard</h2>
+<h3> LeaderBoard</h3>
 <pre>
    <?php echo $_SESSION["user1"]; ?> </li>
    <?php echo $_SESSION["user2"]; ?> </li>

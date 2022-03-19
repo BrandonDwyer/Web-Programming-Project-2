@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1> JEOPARDY !</h1>
+<div class="jeo"> JEOPARDY !</div>
 
 <!-- Creating Game Board Table -->
 <table>

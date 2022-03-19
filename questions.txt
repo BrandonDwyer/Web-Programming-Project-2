@@ -7,7 +7,7 @@
 5,The Orlando Magic selected this college standout with the first pick in the 1993 NBA draft.,Who is Chris Webber?,Who is Anfernee Hardaway?,Who is Shawn Bradley?,Who is Shaquille O'Neil?,2,$1000
 6,According to the Census Bureau what are the five most common surnames in the United States,What is Smith Johnson Williams Jones and Brown,What is Smith Johnson Kelvin Thomas and Washington,What is Smith Johnson Williams Jones and Brown,What is Smith John Williams Jones and Martin,2,$200
 7,Joseph Goebbels was minister of propaganda for this political party.,What is the Peace and Freedom Party?,What is the Sturm und Drang Party?,What is the Nazi Party?,What is the Fallist Party?,3,$400
-8, This group awards a highly prestigious Peace Prize with the same name.,What is the LDS church?What is the United Nations?,What is the Nobel Foundation?,What is the Gates Foundation?,3,$600
+8, This group awards a highly prestigious Peace Prize with the same name.,What is the LDS church?,What is the United Nations?,What is the Nobel Foundation?,What is the Gates Foundation?,3,$600
 9,More than 30000 Americans died in this "forgotten war.",What is WWII?,What is the Korean Conflict?,What is the Revolutionary War?,What is the War of the Roses?,3,$800
 10,Who in 1963 murdered Lee Harvey Oswald the assassin (according to official accounts) of US President John F Kennedy?,What is Jack Ruby?,What is Thomas Nast,What is Jesse James,What is Brigham Young,2,$1000
 11,The first Earth Day was celebrated in this year...,1950,1960,1970,1980,4,$200
