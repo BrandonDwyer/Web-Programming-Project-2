@@ -34,17 +34,49 @@
    if (isset($_POST['ans'])) {
     $answer = $_POST['ans'];  
     if ($answer == $data[6]) {    
-        $val = (int)$_SESSION['Points'] + (int)$data[7];
-        if(isset($_SESSION['Points'])){
-            echo '<h2>GAME OVER! THANK YOU FOR PLAYING! YOUR FINAL SCORE IS ' . $_SESSION['Points'] . '! SEE THE LEADERBOARD BELOW!</h2>';
+        $val = $data[7];
+        
+        switch ($val) {
+            case '$200':
+                  $_SESSION['Points'] = 200;
+                break;
+            case '$400':
+                  $_SESSION['Points'] = 400;
+                break;
+            case '$600':
+                  $_SESSION['Points'] = 600;
+                break;
+            case '$800':
+                  $_SESSION['Points'] = 800;
+                break;
+            case '$1000':
+                  $_SESSION['Points'] = 1000;
+                break;
         }
-        $_SESSION['Points'] = $val;
         header('Location: GameScreen.php');
     }
     else {
-        $val = (int)$_SESSION['Points'] - (int)$data[7];
-        $_SESSION['Points'] = $val;
+        
+        $val = $data[7];
+        switch ($val) {
+            case '$200':
+                  $_SESSION['Points'] = -200;
+                break;
+            case '$400':
+                  $_SESSION['Points'] = -400;
+                break;
+            case '$600':
+                  $_SESSION['Points'] = -600;
+                break;
+            case '$800':
+                  $_SESSION['Points'] = -800;
+                break;
+            case '$1000':
+                  $_SESSION['Points'] = -1000;
+                break;
+        }
         header('Location: GameScreen.php');
+
     } 
     }
 ?>

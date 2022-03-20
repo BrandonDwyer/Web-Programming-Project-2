@@ -6,7 +6,30 @@
 </head>
 <body>
 
+ <?php
+   // Start the session
+    session_start();
+    $_SESSION["USER"];
+    if(!isset($_SESSION['USER'])){
+       header('Location: /index.php');
+    }else{         
+         if($_SESSION['Points'] > 0){
+         $moneyGain = $_SESSION['USER']." You Have Earned $".$_SESSION['Points']." Dollars";
+     }
+         if($_SESSION['Points'] < 0){
+         $moneyLost = $_SESSION['USER']." You Have Lost ".$_SESSION['Points']." Dollars";
+     	}
+
+    }
+ ?>
+
+
+
 <div class="jeo"> JEOPARDY !</div>
+<h1> <?php  echo $moneyGain ?></h1>
+<h1> <?php  echo $moneyLost ?></h1>
+
+
 
 <!-- Creating Game Board Table -->
 <table>
@@ -97,6 +120,38 @@
 <td> <a href="QuestionScreen.php?25"> $1000</a> </td> 
 
 <td> <a href="QuestionScreen.php?30"> $1000</a> </td> 
+
+</tr>
+
+<tr>
+	
+<td> Total Score: </td>
+
+
+<td rowspan="5"> 
+
+<?php 
+	
+	$totalScore = 0;
+	$val = $_SESSION['Points'];
+	if($val > 0){
+		$sum = $_SESSION['Points'] + $totalScore;
+		echo "$".$sum;
+	}
+	else{
+
+	echo "$".$totalScore;
+}
+
+//$_SESSION['hold'] = $sum;
+
+//$final = $sum + $_SESSION['hold'];
+
+
+   
+
+?> 
+</td>
 
 </tr>
 </table>
