@@ -35,6 +35,9 @@
     $answer = $_POST['ans'];  
     if ($answer == $data[6]) {    
         $val = (int)$_SESSION['Points'] + (int)$data[7];
+        if(isset($_SESSION['Points'])){
+            echo '<h2>GAME OVER! THANK YOU FOR PLAYING! YOUR FINAL SCORE IS ' . $_SESSION['Points'] . '! SEE THE LEADERBOARD BELOW!</h2>';
+        }
         $_SESSION['Points'] = $val;
         header('Location: GameScreen.php');
     }

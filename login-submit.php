@@ -10,7 +10,7 @@
     <body>
         <?php
     session_start();
-    $csv_file = file_get_contents('usersInfo.txt');
+    $csv_file = file_get_contents('UsersInfo.txt');
     $file = fopen("php://temp", 'r+');
     fputs($file,$csv_file);
     rewind($file);

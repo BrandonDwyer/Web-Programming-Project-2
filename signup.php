@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -8,19 +9,10 @@
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     </head>
     <body>
-       
     <?php
             session_start();
         ?>
         
-        <?php
-            if(isset($_SESSION['signupFail'])){
-                
-                if($_SESSION['signupFail'] == TRUE){
-                    echo "<h2>User already used. Please try again.</h2>";
-                }
-            }
-        ?>
         <form action = "signup-submit.php" method = "POST">
             <fieldset>
                 <h1>Sign Up!</h1>
