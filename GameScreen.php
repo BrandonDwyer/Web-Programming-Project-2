@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="jeopardy.css">
+<link rel="stylesheet" href="jeopardy.css?ver=1.0">
 <title> Jeporady Main Page</title>
 </head>
 <body>
 
  <?php
    // Start the session
+   $money  = 0;
     session_start();
   //  $_SESSION["USER"];
-  //  if(!isset($_SESSION['USER'])){
-   //    header('Location: /index.php');
- //   }else{
-         
-         if($_SESSION['Points'] > 0){
-         $moneyGain = $_SESSION['USER']." You Have Earned $".$_SESSION['Points']." Dollars";
-     }
-         if($_SESSION['Points'] < 0){
-         $moneyLost = $_SESSION['USER']." You Have Lost ".$_SESSION['Points']." Dollars";
-     	}
+    if(!isset($_SESSION['USER'])){
+       header('Location: /index.php');
+    }else{
+         if( $_SESSION['Points'] > 0){
+         $money = $_SESSION['USER']." You Have Earned $".$_SESSION['Points']." Dollars";
+        }else if($_SESSION['Points'] < 0){
+         $money = $_SESSION['USER']." You Have Lost ".$_SESSION['Points']." Dollars";
+     	}else{
+            $money = $_SESSION['USER']." You Have ".$_SESSION['Points']." Dollars";
+         }
 
-  //  }
+         
+    }
  ?>
 
 
 
 <div class="jeo"> JEOPARDY !</div>
-<h1> <?php  echo $moneyGain ?></h1>
-<h1> <?php  echo $moneyLost ?></h1>
-
+<h1> <?php  echo $money?></h1>
 
 
 <!-- Creating Game Board Table -->
@@ -47,12 +47,24 @@
 
 <!-- Creating $200 Value Row For Game Board -->
 <tr>
-<td> <a href="QuestionScreen.php?1"> $200</a> </td> 
+<td>
+    <?php if(!isset($_SESSION['1' .$_SESSION["USER"]])):?> 
+    <a href="QuestionScreen.php?1"> $200</a> </td> 
+    <?php endif; ?>
 
-<td> <a href="QuestionScreen.php?6"> $200</a> </td> 
+<td> 
+<?php if(!isset($_SESSION['6' .$_SESSION["USER"]])):?> 
+    <a href="QuestionScreen.php?6"> $200</a> </td> 
+    <?php endif; ?>
 
-<td> <a href="QuestionScreen.php?11"> $200</a> </td> 
+</td> 
 
+<td> 
+<?php if(!isset($_SESSION['11' .$_SESSION["USER"]])):?> 
+    <a href="QuestionScreen.php?11"> $200</a> </td> 
+    <?php endif; ?>
+
+</td> 
 <td> <a href="QuestionScreen.php?16"> $200</a> </td> 
 
 <td> <a href="QuestionScreen.php?21"> $200</a> </td> 
@@ -134,9 +146,7 @@
 <?php 
 	
 		$currentPoints = $_SESSION['Points'];
-		$totalScore = 0;
-		$totalScore = $_SESSION['Sum'] + $currentPoints;
-		$_SESSION['Sum'] = $totalScore;
+		$totalScore = $currentPoints;
 		
 		if($totalScore > 0){
 			echo "$".$totalScore;

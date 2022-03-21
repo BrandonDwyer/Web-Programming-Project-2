@@ -20,6 +20,7 @@
    $parameter = $_SERVER['QUERY_STRING'];
    session_start();
 
+
    $txt_file  = file_get_contents('questions.txt');
     $rows = explode("\n", $txt_file);
     foreach($rows as $row => $v)
@@ -27,10 +28,15 @@
         $row_data = explode(',', $v);
         if($row_data[0] == $parameter){
             $data = $row_data;
-
         }
     }
    $selected = -1;
+   $Seassionval = strval($parameter) .$_SESSION['USER'];
+
+   if(isset($_SESSION[$Seassionval])){
+    header('Location: /GameScreen.php');
+    }
+
    if (isset($_POST['ans'])) {
     $answer = $_POST['ans'];  
     if ($answer == $data[6]) {    
@@ -53,6 +59,7 @@
                   $_SESSION['Points'] = 1000;
                 break;
         }
+        $_SESSION[$Seassionval] = "Visted";
         header('Location: GameScreen.php');
     }
     else {
@@ -75,8 +82,8 @@
                   $_SESSION['Points'] = -1000;
                 break;
         }
-        header('Location: GameScreen.php');
-
+        $_SESSION[$Seassionval] = "Visted";
+        header('Location: /GameScreen.php');
     } 
     }
 ?>
