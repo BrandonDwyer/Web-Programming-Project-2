@@ -9,10 +9,11 @@
  <?php
    // Start the session
     session_start();
-    $_SESSION["USER"];
-    if(!isset($_SESSION['USER'])){
-       header('Location: /index.php');
-    }else{         
+  //  $_SESSION["USER"];
+  //  if(!isset($_SESSION['USER'])){
+   //    header('Location: /index.php');
+ //   }else{
+         
          if($_SESSION['Points'] > 0){
          $moneyGain = $_SESSION['USER']." You Have Earned $".$_SESSION['Points']." Dollars";
      }
@@ -20,7 +21,7 @@
          $moneyLost = $_SESSION['USER']." You Have Lost ".$_SESSION['Points']." Dollars";
      	}
 
-    }
+  //  }
  ?>
 
 
@@ -132,23 +133,17 @@
 
 <?php 
 	
-	$totalScore = 0;
-	$val = $_SESSION['Points'];
-	if($val > 0){
-		$sum = $_SESSION['Points'] + $totalScore;
-		echo "$".$sum;
-	}
-	else{
-
-	echo "$".$totalScore;
-}
-
-//$_SESSION['hold'] = $sum;
-
-//$final = $sum + $_SESSION['hold'];
-
-
-   
+		$currentPoints = $_SESSION['Points'];
+		$totalScore = 0;
+		$totalScore = $_SESSION['Sum'] + $currentPoints;
+		$_SESSION['Sum'] = $totalScore;
+		
+		if($totalScore > 0){
+			echo "$".$totalScore;
+		}
+		else {
+			echo "$"."(".$totalScore.")";
+		}
 
 ?> 
 </td>
