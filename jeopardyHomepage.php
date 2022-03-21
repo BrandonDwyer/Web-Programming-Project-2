@@ -2,7 +2,7 @@
 // Start the session
 session_start();
 if(!isset($_SESSION['USER'])){
-  header('Location: /index.php');
+  header('Location: index.php');
 }
 
 ?>
@@ -37,7 +37,9 @@ $_SESSION["user3"] = " User3 - $900";
 
 <form method="POST" action="GameScreen.php">
 <button class="button"> PLAY</button>
+<a class="link" href = "logout.php">LOG OUT</a>
 </form>
 
+
 </body>
-</html>
+</html>s
