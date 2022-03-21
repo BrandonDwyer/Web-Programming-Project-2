@@ -20,17 +20,26 @@ if(!isset($_SESSION['USER'])){
 
 <?php
 // Set session variables
-$_SESSION["user1"] = " User1 - $1,500";
-$_SESSION["user2"] = " User2 - $1,300";
-$_SESSION["user3"] = " User3 - $900";
+$_SESSION["user1"] = 1500;
+$_SESSION["user2"] = 1300;
+$_SESSION["user3"] = 900;
+
+if($_SESSION['Score'] > $_SESSION["user1"]){
+    $_SESSION["user1"] = $_SESSION['Score'];
+}elseif ($_SESSION['Score'] > $_SESSION["user2"]) {
+    $_SESSION["user2"] = $_SESSION['Score'];
+}elseif ($_SESSION['Score'] > $_SESSION["user3"]) {
+    $_SESSION["user3"] = $_SESSION['Score'];
+
+}
 ?>
 
 <div id="d1">
 <h3> LeaderBoard</h3>
 <pre>
-   <?php echo $_SESSION["user1"]; ?> </li>
-   <?php echo $_SESSION["user2"]; ?> </li>
-   <?php echo $_SESSION["user3"]; ?> </li>
+   <?php echo "User 1 - $".$_SESSION["user1"]; ?> </li>
+   <?php echo "User 2 - $".$_SESSION["user2"]; ?> </li>
+   <?php echo "User 3 - $".$_SESSION["user3"]; ?> </li>
 <pre>
 
 </div>
@@ -42,4 +51,4 @@ $_SESSION["user3"] = " User3 - $900";
 
 
 </body>
-</html>s
+</html>
