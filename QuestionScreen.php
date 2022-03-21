@@ -57,7 +57,7 @@
     }
     else {
         
-        $val = $data[7];
+      $val = $data[7];
         switch ($val) {
             case '$200':
                   $_SESSION['Points'] = -200;
