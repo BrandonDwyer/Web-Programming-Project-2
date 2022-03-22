@@ -5,6 +5,7 @@
     <head>
         <title>Jeopardy! - Login</title>
         <link type = "text/css" rel = "stylesheet" href = "style.css"/>
+        <link rel="icon" type="image/x-icon" href="jeopardyPageLogo.jpeg">
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     </head>
     <body>

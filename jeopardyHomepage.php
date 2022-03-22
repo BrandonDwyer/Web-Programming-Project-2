@@ -1,6 +1,7 @@
 <?php
 // Start the session
 session_start();
+require_once('functions.php');
 if(!isset($_SESSION['USER'])){
   header('Location: index.php');
 }
@@ -10,6 +11,7 @@ if(!isset($_SESSION['USER'])){
 <html lang="en">
 <head>
 <link rel="stylesheet" href="jeopardy.css">
+<link rel="icon" type="image/x-icon" href="jeopardyPageLogo.jpeg">
 <title> Jeporady Main Page</title>
 </head>
 <body>
@@ -21,26 +23,29 @@ if(!isset($_SESSION['USER'])){
 <?php
 // Set session variables
 $_SESSION["user1"] = 1500;
-$_SESSION["user2"] = 1300;
+$_SESSION["user2"] = 1000;
 $_SESSION["user3"] = 900;
 
-if($_SESSION['Score'] > $_SESSION["user1"]){
-    $_SESSION["user1"] = $_SESSION['Score'];
-}elseif ($_SESSION['Score'] > $_SESSION["user2"]) {
-    $_SESSION["user2"] = $_SESSION['Score'];
-}elseif ($_SESSION['Score'] > $_SESSION["user3"]) {
-    $_SESSION["user3"] = $_SESSION['Score'];
 
+
+if($_SESSION['max'] > $_SESSION["user1"]){
+  $_SESSION["user1"] = $_SESSION["USER"]." - ".$_SESSION['max'];
+}
+else if($_SESSION['max'] > $_SESSION["user2"]){
+  $_SESSION["user2"] = $_SESSION["USER"]." - ".$_SESSION['max'];
+}
+else if($_SESSION['max'] > $_SESSION["user3"]){
+  $_SESSION["user3"] = $_SESSION["USER"]." - ".$_SESSION['max'];
 }
 ?>
 
 <div id="d1">
 <h3> LeaderBoard</h3>
-<pre>
-   <?php echo "User 1 - $".$_SESSION["user1"]; ?> </li>
-   <?php echo "User 2 - $".$_SESSION["user2"]; ?> </li>
-   <?php echo "User 3 - $".$_SESSION["user3"]; ?> </li>
-<pre>
+<ol class="list">
+   <li> <?php echo $_SESSION["user1"]; ?> </li>
+   <li> <?php echo $_SESSION["user2"]; ?> </li>
+   <li> <?php echo $_SESSION["user3"]; ?> </li>
+</ol>
 
 </div>
 
@@ -48,7 +53,6 @@ if($_SESSION['Score'] > $_SESSION["user1"]){
 <button class="button"> PLAY</button>
 <a class="link" href = "logout.php">LOG OUT</a>
 </form>
-
 
 </body>
 </html>

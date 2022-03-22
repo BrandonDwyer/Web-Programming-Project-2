@@ -7,6 +7,7 @@
         <title>Jeopardy!</title>
 
         <link type = "text/css" rel = "stylesheet" href = "style.css"/>
+        <link rel="icon" type="image/x-icon" href="jeopardyPageLogo.jpeg">
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     </head>
     <body>
@@ -37,7 +38,7 @@
                 <label for = "password"><strong>Password:</strong></label>
                 <input type = "password" placeholder="Password" size = "16" name = "Password" required></br>
                 <input type = "submit" name="Submit" value = "Login"/>
-                <p>Don't have an account? <a href = "signup.php">Sign up</a></p>
+                <p>Don't have an account? <a href = "signup.php">SIGN UP</a></p>
             </fieldset>
             
         </form>

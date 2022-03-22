@@ -1,13 +1,14 @@
 table, th, td {
   border:1px solid black;
-  width: 1000px;
-  height: 100px;
+  width: 1200px;
+  height: 90px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-color: blue;
   color: rgb(247, 241, 241);
   font-size: 40pt;
+  
 }
 
 h1 {
@@ -17,19 +18,23 @@ h1 {
     color:rgb(238, 50, 213);
 
 }
-
+ 
 a:hover {
     color: yellow;
     font-weight: bold;
 }
 
-a:visited {
-  color: rgb(27, 190, 240);
+
+a:visited{
+  color: paleturquoise;
 }
 
 a:link {
   color: yellow;
+  text-decoration: none;
 }
+
+
 
 body {
   background: url("jeopardyBackground.jpg");
@@ -63,13 +68,11 @@ body {
 }
 .button {
   background-color: blueviolet;
-  border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 20px 10px 20px;
   text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  display: inline;
+  
 }
 
 .button:hover{
@@ -90,7 +93,7 @@ p{
 #d1{
   font-family: 'Times New Roman', Times, serif;
   font-size: 2em;
-  color:rgb(170, 172, 172);
+  color:rgb(14, 238, 238);
   position: relative;
   width:400px;
   height:300px;
@@ -99,7 +102,7 @@ p{
   
 }
 
-pre {
+.list {
   display: block;
   font-family: monospace;
   margin: 1em 0px;
@@ -107,9 +110,10 @@ pre {
 }
 
 h3{
-  color:#788aee;
+  
+  color:#e7e9f3;
   font-size: 1em;
-  text-align: center;
+  text-align: left;
  
 }
 
@@ -168,17 +172,14 @@ input[type="radio"]:focus {
 
 
 .link{
-  width: 100%;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
+
   background-color: blueviolet;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
-  font-size: large;
-  margin: 4px 2px;
-  cursor: pointer;
+  display: inline;
+  
+
 }
 
 .link:hover{
